@@ -1,0 +1,105 @@
+/* Body and default text */
+body {
+  background-color: black; /* page background */
+  color: rgb(238, 232, 232);            /* normal text color */
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-size: 36px;
+.site-title {
+  text-align: center;   /* centers text */
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+  margin: 0;
+  line-height: 1.6;
+}
+.center-image {
+  display: block;          /* allows margin auto to work */
+  margin: 40px auto;      /* centers horizontally */
+  width: 1500px ;           /* makes it bigger */
+  max-width: 90% auto;         /* keeps it responsive on phones */
+}
+
+/* Highlighted text */
+.highlight {
+  background-color: white; /* highlight background */
+  color: black;            /* text color */
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+/* Container for sidebar + content */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #111; /* slightly darker for contrast */
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.sidebar a:hover {
+  background-color: #333;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Mobile Menu Button */
+.menu-btn {
+  display: none;
+  font-size: 36px;
+  padding: 10px 15px;
+  background: #111;
+  color: white;
+  border: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -220px;
+    top: 0;
+    height: 100%;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .content {
+    padding-top: 60px;
+  }
+}
+
