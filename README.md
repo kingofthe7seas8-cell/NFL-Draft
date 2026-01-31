@@ -1,0 +1,1 @@
+Durst NFL Drafts provides in-depth NFL draft coverage, including mock drafts, prospect profiles, and expert analysis. Our goal is to deliver accurate, easy-to-understand draft content for fans who want to stay ahead.
